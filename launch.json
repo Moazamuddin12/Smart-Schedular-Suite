@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch SmartScheduler (Qt)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/SmartScheduler.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "C:\\Qt\\6.12.0\\msvc2022_64\\bin;%PATH%"
+                }
+            ],
+            "console": "integratedTerminal",
+            "preLaunchTask": "CMake Build (MSVC + Qt6)"
+        },
+        {
+            "name": "Test EventPlanner + Timetable",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/SmartSchedulerTest.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "preLaunchTask": "Build Module Tests"
+        }
+    ]
+}
