@@ -1,0 +1,25 @@
+# build output
+build/
+build-*/
+*.exe
+*.o
+*.obj
+release/
+
+# Qt Creator
+*.user
+*.user.*
+CMakeLists.txt.user*
+
+# editors
+.vscode/
+.idea/
+
+# test programs compiled by hand with g++ (root only, so tests/*.cpp is NOT ignored)
+/test_ds
+/test_sorting
+/test_tournament
+/test_timetable
+/test_study
+/test_event
+/bench
